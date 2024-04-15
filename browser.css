@@ -1,0 +1,71 @@
+/* These are browser generated css, please do not use this in deployment build */
+
+@media (max-width: 910px) {
+    .mynav {
+        display: flex;
+        font-size: 25px;
+        justify-content: space-around;
+        /* border: 2px solid red; */
+        min-height: 25vh;
+        /* padding: 40px 150px 0px 150px; */
+        flex-direction: column;
+        padding: 30px 0px 0px 0px;
+        /* min-width: 20%; */
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #232323; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  .invert {
+    filter: invert(1);
+  }
+  
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: 1px solid #999;
+  }
+  
+  input[type="checkbox"]:checked {
+    background: #999;
+  }
+  
+  .play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fonts/clash-display.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="browser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>StoryBoard</title>
+</head>
+
+<body style="font-family:'Nunito';">
+    <nav class="mynav">
+        <div class="pointer">
+            <a href="index.html" class="nodeco">YASH MALLECHERRY</a>
+        </div>
+        <div class="links">
+            <div class="pointer"><a href="/projects.html#prjcts" class="nodeco">Portfolio</a></div>
+            <div class="pointer"><a href="/about.html" class="nodeco">About</a></div>
+            <div class="pointer"><a href="/collab.html" class="nodeco">Contact</a></div>
+            <div class="pointer"><a href="/" class="nodeco">Home</a></div>
+        </div>
+    </nav>
+    <div class="bdy" style="display: flex; flex-direction: column;">
+        <div style="padding-left: 140px; font-size: 100px;" class="play-regular">05<span class="tab-2"></span>Museum Rebranding</div>
+        <div id="image-container" style="padding-top: 100px; min-height: 100vh;">
+            <img id="carousel-image" src="./imgs/Artboard 13@4x.png" width="50%" height="100%" style="padding-left: 440px;">
+            <button id="prev-button" class="nav-button" style="margin-left: 120px;"><</button>
+            <button id="next-button" class="nav-button" style="margin-right: 120px;">></button>
+        </div>
+    </div>
+    <div class="abvfooter">
+        <div style="display: flex; padding-left: 100px;">
+            <div class="abvimg">
+                <img src="./imgs/Artboard 16@4x.png" alt="">
+            </div>
+            <div class="abvimg">
+                <img src="./imgs/Artboard 18@4x.png" alt="">
+            </div>
+        </div>
+        <div style="padding: 0px 120px 220px 120px; font-size: 30px;">
+            <center>
+                In the museum rebranding project, I transformed an unknown museum located in
+                Satara into a digital powerhouse. By creating a user-friendly website, I effectively
+                showcased the museum's extensive collection of articles and artwork to a wider
+                audience. To enhance visitor experience and create lasting memories, I
+                introduced a unique feature: customized digital receipts that visitors could
+                keep as mementos of their visit. Additionally, I designed intuitive gallery icons
+                for each exhibition, ensuring convenient navigation and understanding of the
+                museum's diverse offerings. Through these strategic initiatives, the museum
+                underwent a successful rebranding, elevating its profile and accessibility in the
+                cultural landscape.
+            </center>
+        </div>
+    </div>
+    <div class="footer" style="border-top: 2px solid white;">
+        <div class="text" style="padding-top: 15px;">Follow my Socials</div>
+        <div class="socials" style="padding-top: 15px;">
+            <a href="https://www.instagram.com/yashmallecherry?igsh=MThpMnB3Y3c4ZzJmYw%3D%3D&utm_source=qr"
+                target="_blank" style="text-decoration: none;">
+                <div class="violet">Instagram<span class="tab"></span>.</div>
+            </a>
+            <a href="https://in.linkedin.com/in/yash-mallecherry-a57876239" target="_blank"
+                style="text-decoration: none;">
+                <div class="violet">LinkedIn<span class="tab"></span>.</div>
+            </a>
+            <a href="https://www.behance.net/yashmallecherry" target="_blank" style="text-decoration: none;">
+                <div class="violet">Behance<span class="tab"></span>.</div>
+            </a>
+        </div>
+    </div>
+    <script>
+        var images = ["./imgs/Artboard 13@4x.png", "./imgs/Artboard 1@4x.png"];
+        var index = 0;
+
+        document.getElementById("prev-button").addEventListener("click", function () {
+            index = (index - 1 + images.length) % images.length;
+            document.getElementById("carousel-image").src = images[index];
+        });
+
+        document.getElementById("next-button").addEventListener("click", function () {
+            index = (index + 1) % images.length;
+            document.getElementById("carousel-image").src = images[index];
+        });
+    </script>
+</body>
+
+</html>
